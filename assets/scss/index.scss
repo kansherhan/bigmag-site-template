@@ -1,0 +1,66 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+@import "./vars";
+
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+    color: $text-color;
+
+    font-family: "Montserrat", sans-serif;
+
+    line-height: 1.3;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 1300px;
+    width: 100%;
+}
+
+.call-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: fixed;
+    left: 30px;
+    bottom: 30px;
+    z-index: 1000;
+
+    width: 100px;
+    height: 100px;
+
+    background: #00000013;
+
+    border-radius: 50%;
+
+    a {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        background: $orange;
+
+        width: 75px;
+        height: 75px;
+
+        border-radius: 50%;
+
+        ion-icon {
+            font-size: 36px;
+
+            color: #fff;
+        }
+    }
+}
+
+@import "./header";
+@import "./footer";
+
+@import "./section";
+@import "./registration";

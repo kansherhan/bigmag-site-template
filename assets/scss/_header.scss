@@ -1,0 +1,83 @@
+.header {
+    &-inner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        height: 90px;
+
+        & > {
+            .icon {
+                margin-right: 10px;
+
+                img {
+                    width: 120px;
+                    height: auto;
+                }
+            }
+
+            .navigation {
+                a {
+                    display: inline-block;
+
+                    font-size: 14px;
+                    padding: 0 10px;
+                    text-decoration: none;
+
+                    &.active,
+                    &:hover {
+                        color: $green;
+                        text-decoration: underline;
+
+                        transform: scale(1.05);
+
+                        transition: all 0.3s;
+                    }
+                }
+            }
+
+            .phone {
+                font-size: 18px;
+                font-weight: 600;
+
+                text-decoration: none;
+            }
+
+            .user-actions {
+                display: flex;
+
+                a {
+                    display: flex;
+                    justify-content: center;
+
+                    font-size: 14px;
+
+                    padding: 0 15px;
+
+                    text-decoration: none;
+
+                    span {
+                        margin-right: 10px;
+                    }
+
+                    ion-icon {
+                        color: $green;
+
+                        font-size: 18px;
+                    }
+                }
+            }
+
+            .language {
+                a {
+                    font-size: 14px;
+                    text-decoration: none;
+
+                    &.active {
+                        font-weight: 600;
+                    }
+                }
+            }
+        }
+    }
+}

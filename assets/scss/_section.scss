@@ -1,0 +1,213 @@
+.main {
+    & {
+        .phone-price {
+            height: 400px;
+
+            margin: 150px 0;
+
+            background: $light-grey;
+
+            &-inner {
+                display: flex;
+                justify-content: center;
+                flex-direction: column;
+
+                height: 400px;
+
+                position: relative;
+
+                h2 {
+                    font-size: 48px;
+                    font-weight: 700;
+
+                    width: 500px;
+
+                    margin-bottom: 20px;
+                }
+
+                .panel {
+                    position: absolute;
+
+                    right: 0;
+                    z-index: 1;
+                }
+
+                .descriptions {
+                    width: 500px;
+
+                    p {
+                        margin-bottom: 10px;
+
+                        &.last {
+                            margin-bottom: 30px;
+                        }
+                    }
+                }
+
+                .button {
+                    display: inline-block;
+
+                    padding: 15px 25px;
+
+                    background: $green;
+
+                    color: #fff;
+
+                    text-decoration: none;
+
+                    border-radius: 30px;
+
+                    font-size: 18px;
+                    font-weight: 700;
+
+                    &:hover {
+                        box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                            rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+                        transform: scale(1.05);
+
+                        transition: all 0.3s;
+                    }
+                }
+            }
+        }
+
+        .how-work {
+            .up {
+                height: 300px;
+
+                &-inner {
+                    position: relative;
+
+                    display: flex;
+                    justify-content: center;
+                    align-items: flex-start;
+                    flex-direction: column;
+
+                    height: 300px;
+
+                    margin-left: 537px;
+
+                    h2 {
+                        font-size: 48px;
+                    }
+
+                    .texts {
+                        margin-top: 20px;
+
+                        width: 600px;
+
+                        font-size: 18px;
+
+                        p {
+                            margin-bottom: 10px;
+                        }
+                    }
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: -500px;
+                    z-index: 10;
+                }
+            }
+
+            .down {
+                margin-left: auto;
+
+                height: 180px;
+
+                background: $light-green;
+
+                &-inner {
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    flex-direction: column;
+
+                    height: 180px;
+
+                    margin-left: 400px;
+
+                    .contacts {
+                        margin-bottom: 15px;
+
+                        a {
+                            margin-right: 15px;
+
+                            ion-icon {
+                                position: absolute;
+                                left: 10px;
+                                top: 5px;
+                                z-index: 1;
+
+                                color: #fff;
+                                background: $light-green;
+
+                                font-size: 18px;
+
+                                padding: 5px;
+
+                                border-radius: 50%;
+
+                                margin-right: auto;
+                            }
+                        }
+                    }
+
+                    a {
+                        display: inline-block;
+
+                        position: relative;
+
+                        background: #fff;
+
+                        text-decoration: none;
+
+                        padding: 10px 15px;
+
+                        min-width: 300px;
+
+                        border-radius: 20px;
+
+                        text-align: center;
+
+                        &:hover {
+                            box-shadow: rgba(0, 0, 0, 0.1) 0px 20px 25px -5px,
+                                rgba(0, 0, 0, 0.04) 0px 10px 10px -5px;
+
+                            transform: scale(1.05);
+
+                            transition: all 0.3s;
+                        }
+                    }
+                }
+            }
+        }
+
+        .technical-advantages {
+            &-inner {
+                h3 {
+                    font-size: 36px;
+
+                    margin: 100px 0 30px 0;
+
+                    text-align: center;
+                }
+
+                ul {
+                    margin-left: 30px;
+                }
+
+                p,
+                li {
+                    font-size: 18px;
+
+                    margin-bottom: 30px;
+                }
+            }
+        }
+    }
+}
